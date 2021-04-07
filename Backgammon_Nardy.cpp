@@ -6,15 +6,15 @@
 #include "backgammon.h"
 
 
-					//*********КОНСОЛЬНА ГРА "НАРДИ"********
-					//При некоректному відображенні Кирилиці розкоментувати (закоментувати)
-					// налаштування на початку функції main().
+					//*********РљРћРќРЎРћР›Р¬РќРђ Р“Р Рђ "РќРђР Р”Р"********
+					//РџСЂРё РЅРµРєРѕСЂРµРєС‚РЅРѕРјСѓ РІС–РґРѕР±СЂР°Р¶РµРЅРЅС– РљРёСЂРёР»РёС†С– СЂРѕР·РєРѕРјРµРЅС‚СѓРІР°С‚Рё (Р·Р°РєРѕРјРµРЅС‚СѓРІР°С‚Рё)
+					// РЅР°Р»Р°С€С‚СѓРІР°РЅРЅСЏ РЅР° РїРѕС‡Р°С‚РєСѓ С„СѓРЅРєС†С–С— main().
 
 int main()
 {
 	int game = 0;
 
-	//	SetConsoleCP(1251);// Налаштування кирилиці 
+	//	SetConsoleCP(1251);// РќР°Р»Р°С€С‚СѓРІР°РЅРЅСЏ РєРёСЂРёР»РёС†С– 
 	//	SetConsoleOutputCP(1251);
 	SetConsoleTitle(Title);
 	system ("MODE CON: COLS=65 LINES=45");
@@ -36,11 +36,11 @@ int menu()
 		{
 			case 1:  { 
 				SetColor(15, color1);
-				printf("      ->Гра 1 на 1"); 
+				printf("      ->Р“СЂР° 1 РЅР° 1"); 
 				SetColor(15, color2);
-				printf("      Гра з Комп'ютером"); 
-				printf("      Правила");
-				printf("      Вихiд");
+				printf("      Р“СЂР° Р· РљРѕРјРї'СЋС‚РµСЂРѕРј"); 
+				printf("      РџСЂР°РІРёР»Р°");
+				printf("      Р’РёС…iРґ");
 				SetColor(15, 5);		
 				gotoxy(12,5);
 				printf("#########    #########        ###       \n");
@@ -74,22 +74,22 @@ int menu()
 				printf("##    ## ##           ## ##     ##         ##  ###    ## \n");
 				gotoxy(5,40);
 				SetColor(15, color1);
-				printf("Для керуванням пунктами меню нитиснiть  '<-' або '->'\n");
+				printf("Р”Р»СЏ РєРµСЂСѓРІР°РЅРЅСЏРј РїСѓРЅРєС‚Р°РјРё РјРµРЅСЋ РЅРёС‚РёСЃРЅiС‚СЊ  '<-' Р°Р±Рѕ '->'\n");
 				gotoxy(12,41);
 				SetColor(15, color2);
-				printf("Для вибору гри нитиснiть'Двiчi Enter'");
+				printf("Р”Р»СЏ РІРёР±РѕСЂСѓ РіСЂРё РЅРёС‚РёСЃРЅiС‚СЊ'Р”РІiС‡i Enter'");
 				SetColor(15, 0);
 			 	break; 
 			}
 
 			case 2: { 
 				SetColor(15, color2);
-				printf("      Гра 1 на 1"); 
+				printf("      Р“СЂР° 1 РЅР° 1"); 
 				SetColor(15, color1);
-				printf("      ->Гра з Комп'ютером");
+				printf("      ->Р“СЂР° Р· РљРѕРјРї'СЋС‚РµСЂРѕРј");
 				SetColor(15, color2); 
-				printf("      Правила");
-				printf("      Вихiд");
+				printf("      РџСЂР°РІРёР»Р°");
+				printf("      Р’РёС…iРґ");
 				SetColor(15, 5);		
 				gotoxy(12,5);
 				printf("#########    #########        ###       \n");
@@ -123,21 +123,21 @@ int menu()
 				printf("##    ## ##           ## ##     ##         ##  ###    ## \n");
 				gotoxy(5,40);
 				SetColor(15, color1);
-				printf("Для керуванням пунктами меню нитиснiть  '<-' або '->'\n");
+				printf("Р”Р»СЏ РєРµСЂСѓРІР°РЅРЅСЏРј РїСѓРЅРєС‚Р°РјРё РјРµРЅСЋ РЅРёС‚РёСЃРЅiС‚СЊ  '<-' Р°Р±Рѕ '->'\n");
 				gotoxy(12,41);
 				SetColor(15, color2);
-				printf("Для вибору гри нитиснiть'Двiчi Enter'");
+				printf("Р”Р»СЏ РІРёР±РѕСЂСѓ РіСЂРё РЅРёС‚РёСЃРЅiС‚СЊ'Р”РІiС‡i Enter'");
 				SetColor(15, 0);
 			 	break; 
 			}
 			case 3:{ 
 				SetColor(15, color2);
-				printf("      Гра 1 на 1"); 
-				printf("      Гра з Комп'ютером");
+				printf("      Р“СЂР° 1 РЅР° 1"); 
+				printf("      Р“СЂР° Р· РљРѕРјРї'СЋС‚РµСЂРѕРј");
 				SetColor(15, color1); 
-				printf("      ->Правила");
+				printf("      ->РџСЂР°РІРёР»Р°");
 				SetColor(15, color2);
-				printf("      Вихiд");
+				printf("      Р’РёС…iРґ");
 				SetColor(15, 5);		
 				gotoxy(12,5);
 				printf("#########    #########        ###       \n");
@@ -171,20 +171,20 @@ int menu()
 				printf("##    ## ##           ## ##     ##         ##  ###    ## \n");
 				gotoxy(5,40);
 				SetColor(15, color1);
-				printf("Для керуванням пунктами меню нитиснiть  '<-' або '->'\n");
+				printf("Р”Р»СЏ РєРµСЂСѓРІР°РЅРЅСЏРј РїСѓРЅРєС‚Р°РјРё РјРµРЅСЋ РЅРёС‚РёСЃРЅiС‚СЊ  '<-' Р°Р±Рѕ '->'\n");
 				gotoxy(12,41);
 				SetColor(15, color2);
-				printf("Для вибору гри нитиснiть'Двiчi Enter'");
+				printf("Р”Р»СЏ РІРёР±РѕСЂСѓ РіСЂРё РЅРёС‚РёСЃРЅiС‚СЊ'Р”РІiС‡i Enter'");
 				SetColor(15, 0);
 				break; 
 			}
 			case 4:{ 
 				SetColor(15, color2);
-				printf("      Гра 1 на 1"); 
-				printf("      Гра з Комп'ютером"); 
-				printf("      Правила");
+				printf("      Р“СЂР° 1 РЅР° 1"); 
+				printf("      Р“СЂР° Р· РљРѕРјРї'СЋС‚РµСЂРѕРј"); 
+				printf("      РџСЂР°РІРёР»Р°");
 				SetColor(15, color1);
-				printf("      ->Вихiд");
+				printf("      ->Р’РёС…iРґ");
 				SetColor(15, 5);		
 				gotoxy(12,5);
 				printf("#########    #########        ###       \n");
@@ -218,10 +218,10 @@ int menu()
 				printf("##    ## ##           ## ##     ##         ##  ###    ## \n");
 				gotoxy(5,40);
 				SetColor(15, color1);
-				printf("Для керуванням пунктами меню нитиснiть  '<-' або '->'\n");
+				printf("Р”Р»СЏ РєРµСЂСѓРІР°РЅРЅСЏРј РїСѓРЅРєС‚Р°РјРё РјРµРЅСЋ РЅРёС‚РёСЃРЅiС‚СЊ  '<-' Р°Р±Рѕ '->'\n");
 				gotoxy(12,41);
 				SetColor(15, color2);
-				printf("Для вибору гри нитиснiть'Двiчi Enter'");
+				printf("Р”Р»СЏ РІРёР±РѕСЂСѓ РіСЂРё РЅРёС‚РёСЃРЅiС‚СЊ'Р”РІiС‡i Enter'");
 				SetColor(15, 0);
 				break; 
 			}
@@ -253,32 +253,32 @@ void rules()
 {
 	system("cls");
 	SetColor(15, color1);
-	printf("\n\n               Правила гри в довгi нарди                  \n\n");
+	printf("\n\n               РџСЂР°РІРёР»Р° РіСЂРё РІ РґРѕРІРіi РЅР°СЂРґРё                  \n\n");
 	SetColor(15, 0);
-		printf("    1. На початку гри всi фiшки знаходятся на головi.     \n\n");
-		printf("    2. За один хiд з голови можна брати тiльки одну     \n");
-		printf(" фiшку.    \n");
-		printf("    Виключення у випадку, коли на початку гри   \n");
-		printf(" випадають кiсточки 3:3, в цьому випадку з голови можна зняти  \n");
-		printf(" другий раз.    \n\n");
-		printf("    3. Цiль гри заключається в том, що гравець повинен   \n");
-		printf(" пройти всiма фiшками повне коло (проти часової стрiлки),  \n");
-		printf(" зайти ними в 'дiм', i зробити це ранiше нiж супротивник \n");
-		printf("    4. Пiсля кидання кiсточок гравець пересуває будь-яку свою \n");
-		printf(" фiшку на число клiток, рiвне випавшому числу одного з \n");
-		printf(" кубикiв, а потiм будь-яку iншу фiшку на число, рiвне   \n");
-		printf(" випавшому числу другого кубика, або можно пересунути  \n");
-		printf(" одну фiшку на число рiвне сумi випавших кiсточок.\n");
-		printf("    Якщо випали кубики з однаковими числами, то гравець  \n");
-		printf(" ходить 4 раза будь-якими фiшками на це число. Причому     \n");
-		printf(" може, як одною походити одразу на всi 4 ходи, так i     \n");
-		printf(" рiзими 4 рази по одному ходу.\n\n");
-		printf("    5. Неможна ставити свої фiшки на фiшки супротивника, \n");
-		printf(" але можна ставити на свої.\n\n");
-		printf("    6. Пропускати хiд неможна, тiльки якщо у вас немає можливостi \n");
-		printf(" зробити хiд, то його пропускають.\n\n");
+		printf("    1. РќР° РїРѕС‡Р°С‚РєСѓ РіСЂРё РІСЃi С„iС€РєРё Р·РЅР°С…РѕРґСЏС‚СЃСЏ РЅР° РіРѕР»РѕРІi.     \n\n");
+		printf("    2. Р—Р° РѕРґРёРЅ С…iРґ Р· РіРѕР»РѕРІРё РјРѕР¶РЅР° Р±СЂР°С‚Рё С‚iР»СЊРєРё РѕРґРЅСѓ     \n");
+		printf(" С„iС€РєСѓ.    \n");
+		printf("    Р’РёРєР»СЋС‡РµРЅРЅСЏ Сѓ РІРёРїР°РґРєСѓ, РєРѕР»Рё РЅР° РїРѕС‡Р°С‚РєСѓ РіСЂРё   \n");
+		printf(" РІРёРїР°РґР°СЋС‚СЊ РєiСЃС‚РѕС‡РєРё 3:3, РІ С†СЊРѕРјСѓ РІРёРїР°РґРєСѓ Р· РіРѕР»РѕРІРё РјРѕР¶РЅР° Р·РЅСЏС‚Рё  \n");
+		printf(" РґСЂСѓРіРёР№ СЂР°Р·.    \n\n");
+		printf("    3. Р¦iР»СЊ РіСЂРё Р·Р°РєР»СЋС‡Р°С”С‚СЊСЃСЏ РІ С‚РѕРј, С‰Рѕ РіСЂР°РІРµС†СЊ РїРѕРІРёРЅРµРЅ   \n");
+		printf(" РїСЂРѕР№С‚Рё РІСЃiРјР° С„iС€РєР°РјРё РїРѕРІРЅРµ РєРѕР»Рѕ (РїСЂРѕС‚Рё С‡Р°СЃРѕРІРѕС— СЃС‚СЂiР»РєРё),  \n");
+		printf(" Р·Р°Р№С‚Рё РЅРёРјРё РІ 'РґiРј', i Р·СЂРѕР±РёС‚Рё С†Рµ СЂР°РЅiС€Рµ РЅiР¶ СЃСѓРїСЂРѕС‚РёРІРЅРёРє \n");
+		printf("    4. РџiСЃР»СЏ РєРёРґР°РЅРЅСЏ РєiСЃС‚РѕС‡РѕРє РіСЂР°РІРµС†СЊ РїРµСЂРµСЃСѓРІР°С” Р±СѓРґСЊ-СЏРєСѓ СЃРІРѕСЋ \n");
+		printf(" С„iС€РєСѓ РЅР° С‡РёСЃР»Рѕ РєР»iС‚РѕРє, СЂiРІРЅРµ РІРёРїР°РІС€РѕРјСѓ С‡РёСЃР»Сѓ РѕРґРЅРѕРіРѕ Р· \n");
+		printf(" РєСѓР±РёРєiРІ, Р° РїРѕС‚iРј Р±СѓРґСЊ-СЏРєСѓ iРЅС€Сѓ С„iС€РєСѓ РЅР° С‡РёСЃР»Рѕ, СЂiРІРЅРµ   \n");
+		printf(" РІРёРїР°РІС€РѕРјСѓ С‡РёСЃР»Сѓ РґСЂСѓРіРѕРіРѕ РєСѓР±РёРєР°, Р°Р±Рѕ РјРѕР¶РЅРѕ РїРµСЂРµСЃСѓРЅСѓС‚Рё  \n");
+		printf(" РѕРґРЅСѓ С„iС€РєСѓ РЅР° С‡РёСЃР»Рѕ СЂiРІРЅРµ СЃСѓРјi РІРёРїР°РІС€РёС… РєiСЃС‚РѕС‡РѕРє.\n");
+		printf("    РЇРєС‰Рѕ РІРёРїР°Р»Рё РєСѓР±РёРєРё Р· РѕРґРЅР°РєРѕРІРёРјРё С‡РёСЃР»Р°РјРё, С‚Рѕ РіСЂР°РІРµС†СЊ  \n");
+		printf(" С…РѕРґРёС‚СЊ 4 СЂР°Р·Р° Р±СѓРґСЊ-СЏРєРёРјРё С„iС€РєР°РјРё РЅР° С†Рµ С‡РёСЃР»Рѕ. РџСЂРёС‡РѕРјСѓ     \n");
+		printf(" РјРѕР¶Рµ, СЏРє РѕРґРЅРѕСЋ РїРѕС…РѕРґРёС‚Рё РѕРґСЂР°Р·Сѓ РЅР° РІСЃi 4 С…РѕРґРё, С‚Р°Рє i     \n");
+		printf(" СЂiР·РёРјРё 4 СЂР°Р·Рё РїРѕ РѕРґРЅРѕРјСѓ С…РѕРґСѓ.\n\n");
+		printf("    5. РќРµРјРѕР¶РЅР° СЃС‚Р°РІРёС‚Рё СЃРІРѕС— С„iС€РєРё РЅР° С„iС€РєРё СЃСѓРїСЂРѕС‚РёРІРЅРёРєР°, \n");
+		printf(" Р°Р»Рµ РјРѕР¶РЅР° СЃС‚Р°РІРёС‚Рё РЅР° СЃРІРѕС—.\n\n");
+		printf("    6. РџСЂРѕРїСѓСЃРєР°С‚Рё С…iРґ РЅРµРјРѕР¶РЅР°, С‚iР»СЊРєРё СЏРєС‰Рѕ Сѓ РІР°СЃ РЅРµРјР°С” РјРѕР¶Р»РёРІРѕСЃС‚i \n");
+		printf(" Р·СЂРѕР±РёС‚Рё С…iРґ, С‚Рѕ Р№РѕРіРѕ РїСЂРѕРїСѓСЃРєР°СЋС‚СЊ.\n\n");
 		SetColor(15, 60);
-		printf("\n\n   Натиснiть будь яку клавiшу, для повернення в меню       \n\n");
+		printf("\n\n   РќР°С‚РёСЃРЅiС‚СЊ Р±СѓРґСЊ СЏРєСѓ РєР»Р°РІiС€Сѓ, РґР»СЏ РїРѕРІРµСЂРЅРµРЅРЅСЏ РІ РјРµРЅСЋ       \n\n");
 	SetColor(15, 0);
 }
 
@@ -311,19 +311,19 @@ void game()
 	{
 		system("cls");
 		printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n                     ");
-		printf("Перемiг 1 гравець!\n");
+		printf("РџРµСЂРµРјiРі 1 РіСЂР°РІРµС†СЊ!\n");
 	}
 	else if(mode == 1)
 	{
 		system("cls");
 		printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n                     ");
-		printf("Перемiг 2 гравець!\n");
+		printf("РџРµСЂРµРјiРі 2 РіСЂР°РІРµС†СЊ!\n");
 	}
 	else
 	{
 		system("cls");
 		printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n                     ");
-		printf("Перемiг Комп'ютер!\n");
+		printf("РџРµСЂРµРјiРі РљРѕРјРї'СЋС‚РµСЂ!\n");
 	}
 }
 
@@ -337,7 +337,7 @@ void bones(int &x, int &y)
 
 void show_bone_double(int x)
 {
-	printf("Кiсточки: %d : %d", x, x);
+	printf("РљiСЃС‚РѕС‡РєРё: %d : %d", x, x);
 	printf("(");
 	for(int i = 4; i > number; i--) {
 		printf("!");
@@ -347,7 +347,7 @@ void show_bone_double(int x)
 
 void show_bone(int x, int y)
 {
-	printf("Кiсточки: %d : %d\n", x, y);
+	printf("РљiСЃС‚РѕС‡РєРё: %d : %d\n", x, y);
 }
 
 void set_begin(int mas[][m])
@@ -393,10 +393,10 @@ void take_step_double_one_bone(int x, int mas[][m], int number_cell[], int playe
 		if(mode == 1)
 		{
 			cell=0;
-			printf("Ходить %d гравець\n", player);
-			printf("Рахунок: (1 гравець) %d - %d (2 гравець)\n", score1, score2);
+			printf("РҐРѕРґРёС‚СЊ %d РіСЂР°РІРµС†СЊ\n", player);
+			printf("Р Р°С…СѓРЅРѕРє: (1 РіСЂР°РІРµС†СЊ) %d - %d (2 РіСЂР°РІРµС†СЊ)\n", score1, score2);
 			show_bone_double(x);			
-			printf("Введiть номер бара: ");
+			printf("Р’РІРµРґiС‚СЊ РЅРѕРјРµСЂ Р±Р°СЂР°: ");
 			do{
 				gets(str);
 				k=strlen(str);
@@ -416,10 +416,10 @@ void take_step_double_one_bone(int x, int mas[][m], int number_cell[], int playe
 		else if(player == 1)
 		{
 			cell=0;
-			printf("Ходить Гравець\n");
-			printf("Рахунок: (Гравець) %d - %d (Комп'ютер)\n", score1, score2);
+			printf("РҐРѕРґРёС‚СЊ Р“СЂР°РІРµС†СЊ\n");
+			printf("Р Р°С…СѓРЅРѕРє: (Р“СЂР°РІРµС†СЊ) %d - %d (РљРѕРјРї'СЋС‚РµСЂ)\n", score1, score2);
 			show_bone_double(x);			
-			printf("Введiть номер бара: ");
+			printf("Р’РІРµРґiС‚СЊ РЅРѕРјРµСЂ Р±Р°СЂР°: ");
 			do{
 				gets(str);
 				k=strlen(str);
@@ -436,8 +436,8 @@ void take_step_double_one_bone(int x, int mas[][m], int number_cell[], int playe
 			while(cell==0);
 		}
 		else{
-			printf("Ходить Комп'ютер\n");
-			printf("Рахунок: (Гравець) %d - %d (Комп'ютер)\n", score1, score2);
+			printf("РҐРѕРґРёС‚СЊ РљРѕРјРї'СЋС‚РµСЂ\n");
+			printf("Р Р°С…СѓРЅРѕРє: (Р“СЂР°РІРµС†СЊ) %d - %d (РљРѕРјРї'СЋС‚РµСЂ)\n", score1, score2);
 			show_bone_double(x);		
 			cell = chance(number_cell, player);
 			Sleep(pause);
@@ -467,23 +467,23 @@ void take_step_double_two_bone(int x, int mas[][m], int number_cell[], int playe
 	
 	if(mode == 1)
 	{
-		printf("Ходить %d гравець\n", player);
-		printf("Рахунок: (1 гравець) %d - %d (2 гравець)\n", score1, score2);
+		printf("РҐРѕРґРёС‚СЊ %d РіСЂР°РІРµС†СЊ\n", player);
+		printf("Р Р°С…СѓРЅРѕРє: (1 РіСЂР°РІРµС†СЊ) %d - %d (2 РіСЂР°РІРµС†СЊ)\n", score1, score2);
 		show_bone_double(x);
 
 		if(number_cell[0] == player) 
 		{ 
 			if(player == 1)
 			{
-				printf("0) Здати фiшку\n"); 
+				printf("0) Р—РґР°С‚Рё С„iС€РєСѓ\n"); 
 			}
 			else
 			{
-				printf("0) Здати фiшку\n"); 
+				printf("0) Р—РґР°С‚Рё С„iС€РєСѓ\n"); 
 			}
 		}
 		cell_step=0;
-		printf("Введiть бар, на який пересунути фiшку: ");
+		printf("Р’РІРµРґiС‚СЊ Р±Р°СЂ, РЅР° СЏРєРёР№ РїРµСЂРµСЃСѓРЅСѓС‚Рё С„iС€РєСѓ: ");
 		do{
 				gets(str);
 				k=strlen(str);
@@ -503,14 +503,14 @@ void take_step_double_two_bone(int x, int mas[][m], int number_cell[], int playe
 	else if(player == 1)
 	{
 		cell_step=0;
-		printf("Ходить Гравець\n", player);
-		printf("Рахунок: (Гравець) %d - %d (Комп'ютер)\n", score1, score2);
+		printf("РҐРѕРґРёС‚СЊ Р“СЂР°РІРµС†СЊ\n", player);
+		printf("Р Р°С…СѓРЅРѕРє: (Р“СЂР°РІРµС†СЊ) %d - %d (РљРѕРјРї'СЋС‚РµСЂ)\n", score1, score2);
 		show_bone_double(x);
 		if(number_cell[0] == player) 
 		{ 
-			printf("0) Здати фiшку \n"); 
+			printf("0) Р—РґР°С‚Рё С„iС€РєСѓ \n"); 
 		}
-		printf("Введiть бар, на який пересунути фiшку: ");
+		printf("Р’РІРµРґiС‚СЊ Р±Р°СЂ, РЅР° СЏРєРёР№ РїРµСЂРµСЃСѓРЅСѓС‚Рё С„iС€РєСѓ: ");
 			do{
 				gets(str);
 				k=strlen(str);
@@ -528,13 +528,13 @@ void take_step_double_two_bone(int x, int mas[][m], int number_cell[], int playe
 	}
 	else
 	{
-		printf("Ходить Комп'ютер\n", player);
-		printf("Рахунок: (Гравець) %d - %d (Комп'ютер)\n", score1, score2);
+		printf("РҐРѕРґРёС‚СЊ РљРѕРјРї'СЋС‚РµСЂ\n", player);
+		printf("Р Р°С…СѓРЅРѕРє: (Р“СЂР°РІРµС†СЊ) %d - %d (РљРѕРјРї'СЋС‚РµСЂ)\n", score1, score2);
 		show_bone_double(x);
 
 		if(number_cell[0] == player) 
 		{ 
-			printf("0) Здати фiшку\n"); 
+			printf("0) Р—РґР°С‚Рё С„iС€РєСѓ\n"); 
 		}
 
 		Sleep(pause);
@@ -658,10 +658,10 @@ void take_step_one_bone(int x, int y, int mas[][m], int number_cell[], int playe
 
 		if(mode == 1){
 			cell=0;
-			printf("Ходить %d гравець\n", player);
-			printf("Рахунок: (1 гравець) %d - %d (2 гравець)\n", score1, score2);
+			printf("РҐРѕРґРёС‚СЊ %d РіСЂР°РІРµС†СЊ\n", player);
+			printf("Р Р°С…СѓРЅРѕРє: (1 РіСЂР°РІРµС†СЊ) %d - %d (2 РіСЂР°РІРµС†СЊ)\n", score1, score2);
 			show_bone(x, y);		
-			printf("Введiть номер бара, з якого робити хiд: ");
+			printf("Р’РІРµРґiС‚СЊ РЅРѕРјРµСЂ Р±Р°СЂР°, Р· СЏРєРѕРіРѕ СЂРѕР±РёС‚Рё С…iРґ: ");
 			do{
 				gets(str);
 				k=strlen(str);
@@ -680,10 +680,10 @@ void take_step_one_bone(int x, int y, int mas[][m], int number_cell[], int playe
 		}
 		else if(player == 1){
 			cell=0;
-			printf("Ходить Гравець\n");
-			printf("Рахунок: (Гравець) %d - %d (Комп'ютер)\n", score1, score2);
+			printf("РҐРѕРґРёС‚СЊ Р“СЂР°РІРµС†СЊ\n");
+			printf("Р Р°С…СѓРЅРѕРє: (Р“СЂР°РІРµС†СЊ) %d - %d (РљРѕРјРї'СЋС‚РµСЂ)\n", score1, score2);
 			show_bone(x, y);		
-			printf("Введiть номер бара: ");
+			printf("Р’РІРµРґiС‚СЊ РЅРѕРјРµСЂ Р±Р°СЂР°: ");
 			do{
 				gets(str);
 				k=strlen(str);
@@ -702,8 +702,8 @@ void take_step_one_bone(int x, int y, int mas[][m], int number_cell[], int playe
 		}
 		else
 		{
-			printf("Ходить Комп'ютер\n");
-			printf("Рахунок: (Гравець) %d - %d (Комп'ютер)\n", score1, score2);
+			printf("РҐРѕРґРёС‚СЊ РљРѕРјРї'СЋС‚РµСЂ\n");
+			printf("Р Р°С…СѓРЅРѕРє: (Р“СЂР°РІРµС†СЊ) %d - %d (РљРѕРјРї'СЋС‚РµСЂ)\n", score1, score2);
 			show_bone(x, y);		
 			cell = chance(number_cell, player);
 			Sleep(pause);
@@ -731,20 +731,20 @@ void take_step_two_bone(int x, int y, int mas[][m], int number_cell[], int playe
 	
 	if(mode == 1)
 	{
-		printf("Ходить %d гравець\n", player);
-		printf("Рахунок: (1 гравець) %d - %d (2 гравець)\n", score1, score2);
+		printf("РҐРѕРґРёС‚СЊ %d РіСЂР°РІРµС†СЊ\n", player);
+		printf("Р Р°С…СѓРЅРѕРє: (1 РіСЂР°РІРµС†СЊ) %d - %d (2 РіСЂР°РІРµС†СЊ)\n", score1, score2);
 		show_bone(x, y);
 
 		if(number_cell[0] == player){ 
 			if(player == 1){
-				printf("0) Здати фiшку\n"); 
+				printf("0) Р—РґР°С‚Рё С„iС€РєСѓ\n"); 
 			}
 			else{
-				printf("0) Здати фiшку\n"); 
+				printf("0) Р—РґР°С‚Рё С„iС€РєСѓ\n"); 
 			}
 		}
 		cell_step=0;
-		printf("Введiть бар, на який пересунути фiшку: ");
+		printf("Р’РІРµРґiС‚СЊ Р±Р°СЂ, РЅР° СЏРєРёР№ РїРµСЂРµСЃСѓРЅСѓС‚Рё С„iС€РєСѓ: ");
 		do{
 			gets(str);
 			k=strlen(str);
@@ -762,14 +762,14 @@ void take_step_two_bone(int x, int y, int mas[][m], int number_cell[], int playe
 		
 	}
 	else if(player == 1){
-		printf("Ходить Гравець\n");
-		printf("Рахунок: (Гравець) %d - %d (Комп'ютер)\n", score1, score2);
+		printf("РҐРѕРґРёС‚СЊ Р“СЂР°РІРµС†СЊ\n");
+		printf("Р Р°С…СѓРЅРѕРє: (Р“СЂР°РІРµС†СЊ) %d - %d (РљРѕРјРї'СЋС‚РµСЂ)\n", score1, score2);
 		show_bone(x, y);
 
 		if(number_cell[0] == player){ 
-			printf("0) Здати фiшку\n"); 
+			printf("0) Р—РґР°С‚Рё С„iС€РєСѓ\n"); 
 		}
-		printf("Введiть бар, на який пересунути фiшку: ");
+		printf("Р’РІРµРґiС‚СЊ Р±Р°СЂ, РЅР° СЏРєРёР№ РїРµСЂРµСЃСѓРЅСѓС‚Рё С„iС€РєСѓ: ");
 		do{
 			gets(str);
 			k=strlen(str);
@@ -786,13 +786,13 @@ void take_step_two_bone(int x, int y, int mas[][m], int number_cell[], int playe
 		while(cell==0);
 	}
 	else{
-		printf("Ходить Комп'ютер\n");
-		printf("Рахунок: (Гравець) %d - %d (Комп'ютер)\n", score1, score2);
+		printf("РҐРѕРґРёС‚СЊ РљРѕРјРї'СЋС‚РµСЂ\n");
+		printf("Р Р°С…СѓРЅРѕРє: (Р“СЂР°РІРµС†СЊ) %d - %d (РљРѕРјРї'СЋС‚РµСЂ)\n", score1, score2);
 		show_bone(x, y);
 
 		if(number_cell[0] == player) 
 		{ 
-			printf("0) Здати фiшку\n"); 
+			printf("0) Р—РґР°С‚Рё С„iС€РєСѓ\n"); 
 		}
 
 		Sleep(pause);
@@ -1474,15 +1474,15 @@ int check_step(int number_cell[], int mas[][m], int player, int x, int y)
 	{
 		system("cls");
 		show_field(number_cell, mas, player);
-		printf("Ходить %d гравець\n", player);
-		printf("Счет: (1 игрок) %d - %d (2 игрок)\n", score1, score2);
+		printf("РҐРѕРґРёС‚СЊ %d РіСЂР°РІРµС†СЊ\n", player);
+		printf("РЎС‡РµС‚: (1 РёРіСЂРѕРє) %d - %d (2 РёРіСЂРѕРє)\n", score1, score2);
 		show_bone(x, y);
-		printf("Введiть номер бара: ");
+		printf("Р’РІРµРґiС‚СЊ РЅРѕРјРµСЂ Р±Р°СЂР°: ");
 		if(player == 1){
-			printf("У вас немає ходу!");
+			printf("РЈ РІР°СЃ РЅРµРјР°С” С…РѕРґСѓ!");
 		}
 		else{
-			printf("У вас немає ходу!");
+			printf("РЈ РІР°СЃ РЅРµРјР°С” С…РѕРґСѓ!");
 		}
 		a = getch();
 		return 0;
@@ -1521,15 +1521,15 @@ int check_step(int number_cell[], int mas[][m], int player, int x)
 	if (check1 == 0){
 		system("cls");
 		show_field(number_cell, mas, player);
-		printf("Ходить %d гравець\n", player);
-		printf("Рахунок: (1 гравець) %d - %d (2 гравець)\n", score1, score2);
+		printf("РҐРѕРґРёС‚СЊ %d РіСЂР°РІРµС†СЊ\n", player);
+		printf("Р Р°С…СѓРЅРѕРє: (1 РіСЂР°РІРµС†СЊ) %d - %d (2 РіСЂР°РІРµС†СЊ)\n", score1, score2);
 		show_bone_double(x);
-		printf("Введiть номер бара: ");
+		printf("Р’РІРµРґiС‚СЊ РЅРѕРјРµСЂ Р±Р°СЂР°: ");
 		if(player == 1){
-			printf("У вас немає ходу!");
+			printf("РЈ РІР°СЃ РЅРµРјР°С” С…РѕРґСѓ!");
 		}
 		else{
-			printf("У вас немає ходу!");
+			printf("РЈ РІР°СЃ РЅРµРјР°С” С…РѕРґСѓ!");
 		}
 		int a = getch();
 		return 0;
@@ -1672,9 +1672,9 @@ void show_desk(int mas[][m])
 	
 	gotoxy(1,40);
 	SetColor(15, color1);
-	printf("Для виходу в попереднє меню по завершенi ходу\n");
+	printf("Р”Р»СЏ РІРёС…РѕРґСѓ РІ РїРѕРїРµСЂРµРґРЅС” РјРµРЅСЋ РїРѕ Р·Р°РІРµСЂС€РµРЅi С…РѕРґСѓ\n");
 	gotoxy(12,41);
-	printf("Натистiть'Двiчi Esc'");
+	printf("РќР°С‚РёСЃС‚iС‚СЊ'Р”РІiС‡i Esc'");
 	SetColor(15, 0);
 	
 	//gotoxy(2,2);
@@ -1740,4 +1740,3 @@ void cursorOn()
 	structCursorInfo.bVisible = TRUE;
 	SetConsoleCursorInfo( handle, &structCursorInfo );
 }
-

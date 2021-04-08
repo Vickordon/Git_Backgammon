@@ -35,10 +35,10 @@ void take_step_double_one_bone(int x, int mas[][m], int number_cell[], int playe
 		if(mode == 1)
 		{
 			cell=0;
-			printf("Ходить %d гравець\n", player);
-			printf("Рахунок: (1 гравець) %d - %d (2 гравець)\n", score1, score2);
+			printf("РҐРѕРґРёС‚СЊ %d РіСЂР°РІРµС†СЊ\n", player);
+			printf("Р Р°С…СѓРЅРѕРє: (1 РіСЂР°РІРµС†СЊ) %d - %d (2 РіСЂР°РІРµС†СЊ)\n", score1, score2);
 			show_bone_double(x);			
-			printf("Введiть номер бара: ");
+			printf("Р’РІРµРґiС‚СЊ РЅРѕРјРµСЂ Р±Р°СЂР°: ");
 			do{
 				gets(str);
 				k=strlen(str);
@@ -58,10 +58,10 @@ void take_step_double_one_bone(int x, int mas[][m], int number_cell[], int playe
 		else if(player == 1)
 		{
 			cell=0;
-			printf("Ходить Гравець\n");
-			printf("Рахунок: (Гравець) %d - %d (Комп'ютер)\n", score1, score2);
+			printf("РҐРѕРґРёС‚СЊ Р“СЂР°РІРµС†СЊ\n");
+			printf("Р Р°С…СѓРЅРѕРє: (Р“СЂР°РІРµС†СЊ) %d - %d (РљРѕРјРї'СЋС‚РµСЂ)\n", score1, score2);
 			show_bone_double(x);			
-			printf("Введiть номер бара: ");
+			printf("Р’РІРµРґiС‚СЊ РЅРѕРјРµСЂ Р±Р°СЂР°: ");
 			do{
 				gets(str);
 				k=strlen(str);
@@ -78,8 +78,8 @@ void take_step_double_one_bone(int x, int mas[][m], int number_cell[], int playe
 			while(cell==0);
 		}
 		else{
-			printf("Ходить Комп'ютер\n");
-			printf("Рахунок: (Гравець) %d - %d (Комп'ютер)\n", score1, score2);
+			printf("РҐРѕРґРёС‚СЊ РљРѕРјРї'СЋС‚РµСЂ\n");
+			printf("Р Р°С…СѓРЅРѕРє: (Р“СЂР°РІРµС†СЊ) %d - %d (РљРѕРјРї'СЋС‚РµСЂ)\n", score1, score2);
 			show_bone_double(x);		
 			cell = chance(number_cell, player);
 			Sleep(pause);
@@ -114,23 +114,23 @@ void take_step_double_two_bone(int x, int mas[][m], int number_cell[], int playe
 	
 	if(mode == 1)
 	{
-		printf("Ходить %d гравець\n", player);
-		printf("Рахунок: (1 гравець) %d - %d (2 гравець)\n", score1, score2);
+		printf("РҐРѕРґРёС‚СЊ %d РіСЂР°РІРµС†СЊ\n", player);
+		printf("Р Р°С…СѓРЅРѕРє: (1 РіСЂР°РІРµС†СЊ) %d - %d (2 РіСЂР°РІРµС†СЊ)\n", score1, score2);
 		show_bone_double(x);
 
 		if(number_cell[0] == player) 
 		{ 
 			if(player == 1)
 			{
-				printf("0) Здати фiшку\n"); 
+				printf("0) Р—РґР°С‚Рё С„iС€РєСѓ\n"); 
 			}
 			else
 			{
-				printf("0) Здати фiшку\n"); 
+				printf("0) Р—РґР°С‚Рё С„iС€РєСѓ\n"); 
 			}
 		}
 		cell_step=0;
-		printf("Введiть бар, на який пересунути фiшку: ");
+		printf("Р’РІРµРґiС‚СЊ Р±Р°СЂ, РЅР° СЏРєРёР№ РїРµСЂРµСЃСѓРЅСѓС‚Рё С„iС€РєСѓ: ");
 		do{
 				gets(str);
 				k=strlen(str);
@@ -150,14 +150,14 @@ void take_step_double_two_bone(int x, int mas[][m], int number_cell[], int playe
 	else if(player == 1)
 	{
 		cell_step=0;
-		printf("Ходить Гравець\n", player);
-		printf("Рахунок: (Гравець) %d - %d (Комп'ютер)\n", score1, score2);
+		printf("РҐРѕРґРёС‚СЊ Р“СЂР°РІРµС†СЊ\n", player);
+		printf("Р Р°С…СѓРЅРѕРє: (Р“СЂР°РІРµС†СЊ) %d - %d (РљРѕРјРї'СЋС‚РµСЂ)\n", score1, score2);
 		show_bone_double(x);
 		if(number_cell[0] == player) 
 		{ 
-			printf("0) Здати фiшку \n"); 
+			printf("0) Р—РґР°С‚Рё С„iС€РєСѓ \n"); 
 		}
-		printf("Введiть бар, на який пересунути фiшку: ");
+		printf("Р’РІРµРґiС‚СЊ Р±Р°СЂ, РЅР° СЏРєРёР№ РїРµСЂРµСЃСѓРЅСѓС‚Рё С„iС€РєСѓ: ");
 			do{
 				gets(str);
 				k=strlen(str);
@@ -175,13 +175,13 @@ void take_step_double_two_bone(int x, int mas[][m], int number_cell[], int playe
 	}
 	else
 	{
-		printf("Ходить Комп'ютер\n", player);
-		printf("Рахунок: (Гравець) %d - %d (Комп'ютер)\n", score1, score2);
+		printf("РҐРѕРґРёС‚СЊ РљРѕРјРї'СЋС‚РµСЂ\n", player);
+		printf("Р Р°С…СѓРЅРѕРє: (Р“СЂР°РІРµС†СЊ) %d - %d (РљРѕРјРї'СЋС‚РµСЂ)\n", score1, score2);
 		show_bone_double(x);
 
 		if(number_cell[0] == player) 
 		{ 
-			printf("0) Здати фiшку\n"); 
+			printf("0) Р—РґР°С‚Рё С„iС€РєСѓ\n"); 
 		}
 
 		Sleep(pause);
@@ -309,10 +309,10 @@ void take_step_one_bone(int x, int y, int mas[][m], int number_cell[], int playe
 
 		if(mode == 1){
 			cell=0;
-			printf("Ходить %d гравець\n", player);
-			printf("Рахунок: (1 гравець) %d - %d (2 гравець)\n", score1, score2);
+			printf("РҐРѕРґРёС‚СЊ %d РіСЂР°РІРµС†СЊ\n", player);
+			printf("Р Р°С…СѓРЅРѕРє: (1 РіСЂР°РІРµС†СЊ) %d - %d (2 РіСЂР°РІРµС†СЊ)\n", score1, score2);
 			show_bone(x, y);		
-			printf("Введiть номер бара, з якого робити хiд: ");
+			printf("Р’РІРµРґiС‚СЊ РЅРѕРјРµСЂ Р±Р°СЂР°, Р· СЏРєРѕРіРѕ СЂРѕР±РёС‚Рё С…iРґ: ");
 			do{
 				gets(str);
 				k=strlen(str);
@@ -331,10 +331,10 @@ void take_step_one_bone(int x, int y, int mas[][m], int number_cell[], int playe
 		}
 		else if(player == 1){
 			cell=0;
-			printf("Ходить Гравець\n");
-			printf("Рахунок: (Гравець) %d - %d (Комп'ютер)\n", score1, score2);
+			printf("РҐРѕРґРёС‚СЊ Р“СЂР°РІРµС†СЊ\n");
+			printf("Р Р°С…СѓРЅРѕРє: (Р“СЂР°РІРµС†СЊ) %d - %d (РљРѕРјРї'СЋС‚РµСЂ)\n", score1, score2);
 			show_bone(x, y);		
-			printf("Введiть номер бара: ");
+			printf("Р’РІРµРґiС‚СЊ РЅРѕРјРµСЂ Р±Р°СЂР°: ");
 			do{
 				gets(str);
 				k=strlen(str);
@@ -353,8 +353,8 @@ void take_step_one_bone(int x, int y, int mas[][m], int number_cell[], int playe
 		}
 		else
 		{
-			printf("Ходить Комп'ютер\n");
-			printf("Рахунок: (Гравець) %d - %d (Комп'ютер)\n", score1, score2);
+			printf("РҐРѕРґРёС‚СЊ РљРѕРјРї'СЋС‚РµСЂ\n");
+			printf("Р Р°С…СѓРЅРѕРє: (Р“СЂР°РІРµС†СЊ) %d - %d (РљРѕРјРї'СЋС‚РµСЂ)\n", score1, score2);
 			show_bone(x, y);		
 			cell = chance(number_cell, player);
 			Sleep(pause);
@@ -387,20 +387,20 @@ void take_step_two_bone(int x, int y, int mas[][m], int number_cell[], int playe
 	
 	if(mode == 1)
 	{
-		printf("Ходить %d гравець\n", player);
-		printf("Рахунок: (1 гравець) %d - %d (2 гравець)\n", score1, score2);
+		printf("РҐРѕРґРёС‚СЊ %d РіСЂР°РІРµС†СЊ\n", player);
+		printf("Р Р°С…СѓРЅРѕРє: (1 РіСЂР°РІРµС†СЊ) %d - %d (2 РіСЂР°РІРµС†СЊ)\n", score1, score2);
 		show_bone(x, y);
 
 		if(number_cell[0] == player){ 
 			if(player == 1){
-				printf("0) Здати фiшку\n"); 
+				printf("0) Р—РґР°С‚Рё С„iС€РєСѓ\n"); 
 			}
 			else{
-				printf("0) Здати фiшку\n"); 
+				printf("0) Р—РґР°С‚Рё С„iС€РєСѓ\n"); 
 			}
 		}
 		cell_step=0;
-		printf("Введiть бар, на який пересунути фiшку: ");
+		printf("Р’РІРµРґiС‚СЊ Р±Р°СЂ, РЅР° СЏРєРёР№ РїРµСЂРµСЃСѓРЅСѓС‚Рё С„iС€РєСѓ: ");
 		do{
 			gets(str);
 			k=strlen(str);
@@ -418,14 +418,14 @@ void take_step_two_bone(int x, int y, int mas[][m], int number_cell[], int playe
 		
 	}
 	else if(player == 1){
-		printf("Ходить Гравець\n");
-		printf("Рахунок: (Гравець) %d - %d (Комп'ютер)\n", score1, score2);
+		printf("РҐРѕРґРёС‚СЊ Р“СЂР°РІРµС†СЊ\n");
+		printf("Р Р°С…СѓРЅРѕРє: (Р“СЂР°РІРµС†СЊ) %d - %d (РљРѕРјРї'СЋС‚РµСЂ)\n", score1, score2);
 		show_bone(x, y);
 
 		if(number_cell[0] == player){ 
-			printf("0) Здати фiшку\n"); 
+			printf("0) Р—РґР°С‚Рё С„iС€РєСѓ\n"); 
 		}
-		printf("Введiть бар, на який пересунути фiшку: ");
+		printf("Р’РІРµРґiС‚СЊ Р±Р°СЂ, РЅР° СЏРєРёР№ РїРµСЂРµСЃСѓРЅСѓС‚Рё С„iС€РєСѓ: ");
 		do{
 			gets(str);
 			k=strlen(str);
@@ -442,13 +442,13 @@ void take_step_two_bone(int x, int y, int mas[][m], int number_cell[], int playe
 		while(cell==0);
 	}
 	else{
-		printf("Ходить Комп'ютер\n");
-		printf("Рахунок: (Гравець) %d - %d (Комп'ютер)\n", score1, score2);
+		printf("РҐРѕРґРёС‚СЊ РљРѕРјРї'СЋС‚РµСЂ\n");
+		printf("Р Р°С…СѓРЅРѕРє: (Р“СЂР°РІРµС†СЊ) %d - %d (РљРѕРјРї'СЋС‚РµСЂ)\n", score1, score2);
 		show_bone(x, y);
 
 		if(number_cell[0] == player) 
 		{ 
-			printf("0) Здати фiшку\n"); 
+			printf("0) Р—РґР°С‚Рё С„iС€РєСѓ\n"); 
 		}
 
 		Sleep(pause);
@@ -1139,15 +1139,15 @@ int check_step(int number_cell[], int mas[][m], int player, int x, int y)
 	{
 		system("cls");
 		show_field(number_cell, mas, player);
-		printf("Ходить %d гравець\n", player);
-		printf("Счет: (1 игрок) %d - %d (2 игрок)\n", score1, score2);
+		printf("РҐРѕРґРёС‚СЊ %d РіСЂР°РІРµС†СЊ\n", player);
+		printf("РЎС‡РµС‚: (1 РёРіСЂРѕРє) %d - %d (2 РёРіСЂРѕРє)\n", score1, score2);
 		show_bone(x, y);
-		printf("Введiть номер бара: ");
+		printf("Р’РІРµРґiС‚СЊ РЅРѕРјРµСЂ Р±Р°СЂР°: ");
 		if(player == 1){
-			printf("У вас немає ходу!");
+			printf("РЈ РІР°СЃ РЅРµРјР°С” С…РѕРґСѓ!");
 		}
 		else{
-			printf("У вас немає ходу!");
+			printf("РЈ РІР°СЃ РЅРµРјР°С” С…РѕРґСѓ!");
 		}
 		a = getch();
 		return 0;
@@ -1188,19 +1188,18 @@ int check_step(int number_cell[], int mas[][m], int player, int x)
 	if (check1 == 0){
 		system("cls");
 		show_field(number_cell, mas, player);
-		printf("Ходить %d гравець\n", player);
-		printf("Рахунок: (1 гравець) %d - %d (2 гравець)\n", score1, score2);
+		printf("РҐРѕРґРёС‚СЊ %d РіСЂР°РІРµС†СЊ\n", player);
+		printf("Р Р°С…СѓРЅРѕРє: (1 РіСЂР°РІРµС†СЊ) %d - %d (2 РіСЂР°РІРµС†СЊ)\n", score1, score2);
 		show_bone_double(x);
-		printf("Введiть номер бара: ");
+		printf("Р’РІРµРґiС‚СЊ РЅРѕРјРµСЂ Р±Р°СЂР°: ");
 		if(player == 1){
-			printf("У вас немає ходу!");
+			printf("РЈ РІР°СЃ РЅРµРјР°С” С…РѕРґСѓ!");
 		}
 		else{
-			printf("У вас немає ходу!");
+			printf("РЈ РІР°СЃ РЅРµРјР°С” С…РѕРґСѓ!");
 		}
 		int a = getch();
 		return 0;
 	}
 	else return 1;
 }
-

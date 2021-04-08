@@ -144,9 +144,9 @@ void show_desk(int mas[][m])
 	
 	gotoxy(1,40);
 	SetColor(15, color1);
-	printf("Для виходу в попереднє меню по завершенi ходу\n");
+	printf("Р”Р»СЏ РІРёС…РѕРґСѓ РІ РїРѕРїРµСЂРµРґРЅС” РјРµРЅСЋ РїРѕ Р·Р°РІРµСЂС€РµРЅi С…РѕРґСѓ\n");
 	gotoxy(12,41);
-	printf("Натистiть'Двiчi Esc'");
+	printf("РќР°С‚РёСЃС‚iС‚СЊ'Р”РІiС‡i Esc'");
 	SetColor(15, 0);
 	
 	//gotoxy(2,2);
@@ -181,4 +181,3 @@ void show_desk(int mas[][m])
 	gotoxy(49,21); printf("|\n"); gotoxy(49,22); printf("|\n"); gotoxy(49,23); printf("|\n");
 	gotoxy(49,24); printf("|\n"); gotoxy(49,25); printf("|\n"); SetColor(15, 0); 
 }
-

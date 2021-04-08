@@ -35,19 +35,18 @@ void game()
 	{
 		system("cls");
 		printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n                     ");
-		printf("Перемiг 1 гравець!\n");
+		printf("РџРµСЂРµРјiРі 1 РіСЂР°РІРµС†СЊ!\n");
 	}
 	else if(mode == 1)
 	{
 		system("cls");
 		printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n                     ");
-		printf("Перемiг 2 гравець!\n");
+		printf("РџРµСЂРµРјiРі 2 РіСЂР°РІРµС†СЊ!\n");
 	}
 	else
 	{
 		system("cls");
 		printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n                     ");
-		printf("Перемiг Комп'ютер!\n");
+		printf("РџРµСЂРµРјiРі РљРѕРјРї'СЋС‚РµСЂ!\n");
 	}
 }
-

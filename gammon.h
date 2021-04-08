@@ -2,31 +2,31 @@
 #define m 12
 #define kol 15
 
-void gotoxy(float x, float y); // Встановлення позиції курсору
-void SetColor(int text, int background); // Встановлення кольору
-void cursorOff(); // Приховати курсор
-void cursorOn(); // Показати курсор
-void rules(); // Правила
-void bones(int &x, int &y); // Киданння кісточок
-void set_begin(int mas[][m]); // Встановлення та заповнення початкої матриці для гри
-int  menu(); // Меню гри
-void game(); // Цикл гри
-void take_step_double_one_bone(int x, int mas[][m], int number_cell[], int player); // Здійснення ходу однією фішкою при однакових значеннях кісточок
-void take_step_double_two_bone(int x, int mas[][m], int number_cell[], int player, int cell); // Здійснення ходу двома фішками при однакових значеннях кісточок
-void take_step_one_bone(int x, int y, int mas[][m], int number_cell[], int player); // Здійснення ходу однією фішкою при різних хначеннях кісточок
-void take_step_two_bone(int x, int y, int mas[][m], int number_cell[], int player, int cell); // Здійснення ходу двома фішками при різних значеннях кісточок
-void variant_step_double(int x, int mas[][m], int number_cell[], int player, int cell); // Варіант ходу при однакових значення кісточок
-void variant_step(int x, int y, int mas[][m], int number_cell[], int player, int cell); // Варіант ходу при різних значеннях кісточок
-void change_position(int cell, int mas[][m], int player, int &step); // Зміна позиції фішки
-void change_player(int &player);// Зміна гравця для здійснення ходу
-void show_bone_double(int x); // Відображення кісточок при однакових значеннях
-void show_bone(int x, int y); // Відображення кісточок при різних значеннях
-int chance(int number_cell[], int player);  // Вибір бару для здійснення ходу
-void set_cell(int number_cell[], int mas[][m], int player); // Встановлення барів на гральному полі
-int check_step(int number_cell[], int mas[][m], int player, int x, int y); // Перевірка варіантів для здійснення ходу при різних значеннях кісточок
-int check_step(int number_cell[], int mas[][m], int player, int x); // Перевірка варіантів для здійснення ходу при однакових значеннях кісточок
-void draw_cell_begin(int number_cell[], int mas[][m], int player); // Відображення підказок варіантів для здійснення ходу для одного гравця
-void draw_cell_end(int number_cell[], int mas[][m], int player);// Відображення підказок варіантів для здійснення ходу для іншого гравця
-void show_field(int number_cell[], int mas[][m], int player); // Відображення грального поля
-void show_field(int number_cell[], int mas[][m], int player, int without_set_cell); // Відображення грального поля без барів
-void show_desk(int mas[][m]); // Відображення гральної доски
+void gotoxy(float x, float y); // Р’СЃС‚Р°РЅРѕРІР»РµРЅРЅСЏ РїРѕР·РёС†С–С— РєСѓСЂСЃРѕСЂСѓ
+void SetColor(int text, int background); // Р’СЃС‚Р°РЅРѕРІР»РµРЅРЅСЏ РєРѕР»СЊРѕСЂСѓ
+void cursorOff(); // РџСЂРёС…РѕРІР°С‚Рё РєСѓСЂСЃРѕСЂ
+void cursorOn(); // РџРѕРєР°Р·Р°С‚Рё РєСѓСЂСЃРѕСЂ
+void rules(); // РџСЂР°РІРёР»Р°
+void bones(int &x, int &y); // РљРёРґР°РЅРЅРЅСЏ РєС–СЃС‚РѕС‡РѕРє
+void set_begin(int mas[][m]); // Р’СЃС‚Р°РЅРѕРІР»РµРЅРЅСЏ С‚Р° Р·Р°РїРѕРІРЅРµРЅРЅСЏ РїРѕС‡Р°С‚РєРѕС— РјР°С‚СЂРёС†С– РґР»СЏ РіСЂРё
+int  menu(); // РњРµРЅСЋ РіСЂРё
+void game(); // Р¦РёРєР» РіСЂРё
+void take_step_double_one_bone(int x, int mas[][m], int number_cell[], int player); // Р—РґС–Р№СЃРЅРµРЅРЅСЏ С…РѕРґСѓ РѕРґРЅС–С”СЋ С„С–С€РєРѕСЋ РїСЂРё РѕРґРЅР°РєРѕРІРёС… Р·РЅР°С‡РµРЅРЅСЏС… РєС–СЃС‚РѕС‡РѕРє
+void take_step_double_two_bone(int x, int mas[][m], int number_cell[], int player, int cell); // Р—РґС–Р№СЃРЅРµРЅРЅСЏ С…РѕРґСѓ РґРІРѕРјР° С„С–С€РєР°РјРё РїСЂРё РѕРґРЅР°РєРѕРІРёС… Р·РЅР°С‡РµРЅРЅСЏС… РєС–СЃС‚РѕС‡РѕРє
+void take_step_one_bone(int x, int y, int mas[][m], int number_cell[], int player); // Р—РґС–Р№СЃРЅРµРЅРЅСЏ С…РѕРґСѓ РѕРґРЅС–С”СЋ С„С–С€РєРѕСЋ РїСЂРё СЂС–Р·РЅРёС… С…РЅР°С‡РµРЅРЅСЏС… РєС–СЃС‚РѕС‡РѕРє
+void take_step_two_bone(int x, int y, int mas[][m], int number_cell[], int player, int cell); // Р—РґС–Р№СЃРЅРµРЅРЅСЏ С…РѕРґСѓ РґРІРѕРјР° С„С–С€РєР°РјРё РїСЂРё СЂС–Р·РЅРёС… Р·РЅР°С‡РµРЅРЅСЏС… РєС–СЃС‚РѕС‡РѕРє
+void variant_step_double(int x, int mas[][m], int number_cell[], int player, int cell); // Р’Р°СЂС–Р°РЅС‚ С…РѕРґСѓ РїСЂРё РѕРґРЅР°РєРѕРІРёС… Р·РЅР°С‡РµРЅРЅСЏ РєС–СЃС‚РѕС‡РѕРє
+void variant_step(int x, int y, int mas[][m], int number_cell[], int player, int cell); // Р’Р°СЂС–Р°РЅС‚ С…РѕРґСѓ РїСЂРё СЂС–Р·РЅРёС… Р·РЅР°С‡РµРЅРЅСЏС… РєС–СЃС‚РѕС‡РѕРє
+void change_position(int cell, int mas[][m], int player, int &step); // Р—РјС–РЅР° РїРѕР·РёС†С–С— С„С–С€РєРё
+void change_player(int &player);// Р—РјС–РЅР° РіСЂР°РІС†СЏ РґР»СЏ Р·РґС–Р№СЃРЅРµРЅРЅСЏ С…РѕРґСѓ
+void show_bone_double(int x); // Р’С–РґРѕР±СЂР°Р¶РµРЅРЅСЏ РєС–СЃС‚РѕС‡РѕРє РїСЂРё РѕРґРЅР°РєРѕРІРёС… Р·РЅР°С‡РµРЅРЅСЏС…
+void show_bone(int x, int y); // Р’С–РґРѕР±СЂР°Р¶РµРЅРЅСЏ РєС–СЃС‚РѕС‡РѕРє РїСЂРё СЂС–Р·РЅРёС… Р·РЅР°С‡РµРЅРЅСЏС…
+int chance(int number_cell[], int player);  // Р’РёР±С–СЂ Р±Р°СЂСѓ РґР»СЏ Р·РґС–Р№СЃРЅРµРЅРЅСЏ С…РѕРґСѓ
+void set_cell(int number_cell[], int mas[][m], int player); // Р’СЃС‚Р°РЅРѕРІР»РµРЅРЅСЏ Р±Р°СЂС–РІ РЅР° РіСЂР°Р»СЊРЅРѕРјСѓ РїРѕР»С–
+int check_step(int number_cell[], int mas[][m], int player, int x, int y); // РџРµСЂРµРІС–СЂРєР° РІР°СЂС–Р°РЅС‚С–РІ РґР»СЏ Р·РґС–Р№СЃРЅРµРЅРЅСЏ С…РѕРґСѓ РїСЂРё СЂС–Р·РЅРёС… Р·РЅР°С‡РµРЅРЅСЏС… РєС–СЃС‚РѕС‡РѕРє
+int check_step(int number_cell[], int mas[][m], int player, int x); // РџРµСЂРµРІС–СЂРєР° РІР°СЂС–Р°РЅС‚С–РІ РґР»СЏ Р·РґС–Р№СЃРЅРµРЅРЅСЏ С…РѕРґСѓ РїСЂРё РѕРґРЅР°РєРѕРІРёС… Р·РЅР°С‡РµРЅРЅСЏС… РєС–СЃС‚РѕС‡РѕРє
+void draw_cell_begin(int number_cell[], int mas[][m], int player); // Р’С–РґРѕР±СЂР°Р¶РµРЅРЅСЏ РїС–РґРєР°Р·РѕРє РІР°СЂС–Р°РЅС‚С–РІ РґР»СЏ Р·РґС–Р№СЃРЅРµРЅРЅСЏ С…РѕРґСѓ РґР»СЏ РѕРґРЅРѕРіРѕ РіСЂР°РІС†СЏ
+void draw_cell_end(int number_cell[], int mas[][m], int player);// Р’С–РґРѕР±СЂР°Р¶РµРЅРЅСЏ РїС–РґРєР°Р·РѕРє РІР°СЂС–Р°РЅС‚С–РІ РґР»СЏ Р·РґС–Р№СЃРЅРµРЅРЅСЏ С…РѕРґСѓ РґР»СЏ С–РЅС€РѕРіРѕ РіСЂР°РІС†СЏ
+void show_field(int number_cell[], int mas[][m], int player); // Р’С–РґРѕР±СЂР°Р¶РµРЅРЅСЏ РіСЂР°Р»СЊРЅРѕРіРѕ РїРѕР»СЏ
+void show_field(int number_cell[], int mas[][m], int player, int without_set_cell); // Р’С–РґРѕР±СЂР°Р¶РµРЅРЅСЏ РіСЂР°Р»СЊРЅРѕРіРѕ РїРѕР»СЏ Р±РµР· Р±Р°СЂС–РІ
+void show_desk(int mas[][m]); // Р’С–РґРѕР±СЂР°Р¶РµРЅРЅСЏ РіСЂР°Р»СЊРЅРѕС— РґРѕСЃРєРё

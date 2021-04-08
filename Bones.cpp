@@ -17,7 +17,7 @@ void show_bone_double(int x)
 {
 	extern int number;
 	
-	printf("Кiсточки: %d : %d", x, x);
+	printf("РљiСЃС‚РѕС‡РєРё: %d : %d", x, x);
 	printf("(");
 	for(int i = 4; i > number; i--) {
 		printf("!");
@@ -27,7 +27,7 @@ void show_bone_double(int x)
 
 void show_bone(int x, int y)
 {
-	printf("Кiсточки: %d : %d\n", x, y);
+	printf("РљiСЃС‚РѕС‡РєРё: %d : %d\n", x, y);
 }
 
 void set_begin(int mas[][m])
@@ -48,4 +48,3 @@ void set_begin(int mas[][m])
 		mas[i][11] = 2;
 	} 
 }
-
